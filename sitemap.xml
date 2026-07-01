@@ -1,0 +1,104 @@
+# Tabla Periódica Interactiva — Paquete listo para subir a servidor
+
+Esta carpeta contiene la versión profesional y monetizable de tu tabla periódica interactiva.
+Puedes subir **toda la carpeta tal cual** a tu hosting (o a un servicio como Netlify, Vercel,
+GitHub Pages, Hostinger, etc.) y funcionará de inmediato como un sitio estático.
+
+## 📁 Estructura de archivos
+
+```
+/
+├── index.html          → Página principal (la tabla periódica)
+├── privacidad.html      → Política de Privacidad
+├── cookies.html          → Política de Cookies
+├── aviso-legal.html      → Aviso Legal
+├── terminos.html         → Términos y Condiciones
+├── 404.html               → Página de error personalizada
+├── robots.txt             → Indica a Google qué puede rastrear
+├── sitemap.xml             → Mapa del sitio para buscadores
+├── manifest.json            → Metadatos para móviles/PWA
+├── favicon.svg               → Icono del sitio
+├── css/styles.css              → Todos los estilos
+└── js/
+    ├── elements-data.js          → Datos de los 118 elementos
+    ├── app.js                      → Lógica de la tabla y el modal
+    └── consent.js                    → Gestión del banner de cookies (GDPR)
+```
+
+## ✅ Qué se ha hecho por ti
+
+- **SEO**: título y descripción optimizados, metaetiquetas Open Graph/Twitter,
+  datos estructurados (`schema.org`) tipo `WebApplication` y `FAQPage`, `robots.txt`
+  y `sitemap.xml`, texto introductorio y sección de preguntas frecuentes indexable
+  (la tabla en sí es muy visual pero poco "legible" para buscadores, así que se
+  ha añadido texto real alrededor).
+- **AdSense**: bloques de anuncio ya integrados — dos raíles laterales (solo en
+  pantallas grandes, ≥1100px) y dos banners horizontales dentro del contenido.
+  Los anuncios **no se cargan hasta que el usuario da su consentimiento** de cookies.
+- **Cookies / GDPR**: banner de consentimiento con "Aceptar", "Rechazar" y
+  "Configurar", que guarda la preferencia en `localStorage` y solo activa los
+  anuncios si el usuario acepta las cookies de publicidad.
+- **Legal**: plantillas de Política de Privacidad, Política de Cookies, Aviso
+  Legal y Términos y Condiciones.
+- **Rendimiento**: CSS y JS separados en archivos cacheables, `preconnect` a
+  fuentes y a los servidores de anuncios, scripts con `defer`.
+- **Responsive**: los anuncios laterales se ocultan automáticamente en móvil
+  para no romper el diseño; en su lugar hay anuncios horizontales dentro del
+  contenido.
+- Se corrigió un pequeño error en los datos originales (clave `disc` duplicada
+  en el elemento Plomo).
+
+## 🔧 Antes de publicar: cosas que TIENES que cambiar
+
+1. **Tu ID de AdSense**: busca y reemplaza `ca-pub-XXXXXXXXXXXXXXXX` en
+   `index.html` (aparece 5 veces) por tu ID real, que obtienes al crear tu
+   cuenta en [google.com/adsense](https://www.google.com/adsense/). Hasta que
+   no tengas cuenta aprobada, deja el sitio publicado sin ese ID activo (los
+   huecos de anuncio simplemente no mostrarán nada).
+2. **IDs de bloque de anuncio (`data-ad-slot`)**: los valores `0000000001`,
+   `0000000002`, etc. son de ejemplo. Cuando crees tus bloques de anuncio
+   reales en AdSense, sustitúyelos por los IDs que te dé Google.
+3. **Tu dominio**: reemplaza `https://www.tudominio.com` por tu dominio real
+   en `index.html`, `sitemap.xml`, `robots.txt` y las páginas legales
+   (búscalo con Ctrl+F/Cmd+F en cada archivo).
+4. **Datos del titular**: en `privacidad.html`, `aviso-legal.html` y
+   `terminos.html` hay campos entre corchetes como `[NOMBRE / RAZÓN SOCIAL]`,
+   `[NIF O CIF]`, `[tu-email@tudominio.com]`. Complétalos con tus datos reales.
+   **Importante**: estas plantillas son una base funcional pero no sustituyen
+   el asesoramiento de un abogado, especialmente si vas a operar como empresa
+   o recibir tráfico de la Unión Europea.
+5. **Imagen para redes sociales**: sube una imagen (1200×630px aprox.) a
+   `img/og-preview.png` y actualiza la ruta si la guardas en otro sitio, para
+   que las miniaturas se vean bien al compartir el enlace.
+
+## 🚀 Pasos para publicar
+
+1. Compra/activa un dominio (si aún no tienes) y contrata hosting, o usa un
+   servicio gratuito de hosting estático como Netlify, Vercel o GitHub Pages.
+2. Sube **todo el contenido de esta carpeta** (no la carpeta en sí, sino los
+   archivos que hay dentro) a la raíz de tu hosting.
+3. Verifica que `index.html` carga correctamente en tu dominio.
+4. Solicita una cuenta en [Google AdSense](https://www.google.com/adsense/)
+   con tu dominio ya publicado (Google requiere que el sitio esté online y
+   tenga contenido real antes de aprobar la cuenta).
+5. Cuando AdSense te apruebe, sustituye los IDs de ejemplo como se indica arriba.
+6. Da de alta el sitio en [Google Search Console](https://search.google.com/search-console)
+   y envía el `sitemap.xml` para acelerar la indexación.
+7. (Opcional pero recomendado) Añade Google Analytics o similar para medir
+   tráfico; recuerda añadir esa cookie a la tabla en `cookies.html`.
+
+## ⚠️ Nota sobre cumplimiento de consentimiento de Google
+
+El banner de cookies incluido es funcional (bloquea los anuncios hasta que el
+usuario acepta), pero Google exige el uso de una plataforma de gestión de
+consentimiento (CMP) certificada bajo el marco IAB TCF si vas a mostrar
+anuncios personalizados a usuarios del Espacio Económico Europeo, Reino
+Unido o Suiza. Revisa los requisitos actualizados en:
+https://support.google.com/adsense/answer/13554116
+
+## 🖼️ Sobre las imágenes de los elementos
+
+El sitio sigue usando la API pública de Wikipedia para mostrar una foto de
+cada elemento al hacer clic (se pide en el navegador del visitante, no hace
+falta que hagas nada). Si algún día Wikipedia cambia su API o el elemento no
+tiene imagen, se mostrará automáticamente un símbolo de reemplazo.

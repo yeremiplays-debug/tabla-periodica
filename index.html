@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Cookies | Tabla Periódica Interactiva</title>
+<meta name="description" content="Información sobre las cookies propias y de terceros que utiliza Tabla Periódica Interactiva, incluida la publicidad de Google AdSense.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.tudominio.com/cookies.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="legal-page">
+  <a class="back-link" href="index.html">← Volver a la tabla periódica</a>
+  <h1>Política de Cookies</h1>
+  <p class="updated">Última actualización: <span id="updateDate"></span></p>
+
+  <p>Una cookie es un pequeño archivo que se almacena en tu navegador cuando visitas casi cualquier página web. Su utilidad es que la web sea capaz de recordar tu visita, tus preferencias o comportamiento de navegación.</p>
+
+  <h2>1. Tipos de cookies que utilizamos</h2>
+  <table style="width:100%; border-collapse:collapse; font-size:0.85rem; margin:16px 0;">
+    <thead>
+      <tr style="text-align:left; border-bottom:1px solid rgba(255,255,255,0.1)">
+        <th style="padding:8px 6px;">Cookie</th>
+        <th style="padding:8px 6px;">Tipo</th>
+        <th style="padding:8px 6px;">Finalidad</th>
+        <th style="padding:8px 6px;">Duración</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.05)">
+        <td style="padding:8px 6px;">cookie_consent_v1</td>
+        <td style="padding:8px 6px;">Técnica / necesaria</td>
+        <td style="padding:8px 6px;">Recuerda tu decisión sobre el banner de cookies</td>
+        <td style="padding:8px 6px;">12 meses</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.05)">
+        <td style="padding:8px 6px;">_ga, _gid, etc.</td>
+        <td style="padding:8px 6px;">Analítica</td>
+        <td style="padding:8px 6px;">Medición de tráfico y comportamiento agregado (si activas Google Analytics)</td>
+        <td style="padding:8px 6px;">Hasta 24 meses</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 6px;">IDE, test_cookie, otras de Google</td>
+        <td style="padding:8px 6px;">Publicidad</td>
+        <td style="padding:8px 6px;">Mostrar anuncios de Google AdSense, personalizados si das tu consentimiento</td>
+        <td style="padding:8px 6px;">Variable (hasta 13 meses)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. Cookies de terceros: Google AdSense</h2>
+  <p>Este Sitio utiliza Google AdSense para mostrar publicidad. Google puede usar cookies propias y de terceros para ofrecer anuncios en base a las visitas que hayas hecho a este y otros sitios. Puedes obtener más información y gestionar tus preferencias en:</p>
+  <ul>
+    <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Cómo usa Google los datos de sitios que usan sus servicios</a></li>
+    <li><a href="https://adssettings.google.com" target="_blank" rel="noopener">Configuración de anuncios de Google</a></li>
+    <li><a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">Digital Advertising Alliance (opt-out)</a></li>
+  </ul>
+
+  <h2>3. Cómo gestionar tus preferencias</h2>
+  <p>Puedes cambiar tu decisión en cualquier momento borrando las cookies de tu navegador o volviendo a abrir el panel de configuración desde el enlace inferior:</p>
+  <p><button class="cookie-btn cookie-btn-primary" onclick="localStorage.removeItem('cookie_consent_v1'); location.reload();">Restablecer mis preferencias de cookies</button></p>
+
+  <h2>4. Cómo desactivar las cookies en tu navegador</h2>
+  <ul>
+    <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+    <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+    <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+    <li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li>
+  </ul>
+
+  <p><em>Recuerda: si vas a operar con tráfico procedente del Espacio Económico Europeo y usarás anuncios personalizados, Google exige el uso de una plataforma de gestión de consentimiento (CMP) certificada bajo el marco IAB TCF. Este banner es una base funcional, pero para cumplimiento estricto revisa
+  <a href="https://support.google.com/adsense/answer/13554116" target="_blank" rel="noopener">los requisitos de consentimiento de Google</a>.</em></p>
+</div>
+<script>document.getElementById('updateDate').textContent = new Date().toLocaleDateString('es-ES', {year:'numeric', month:'long', day:'numeric'});</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ==================== SEO BÁSICO ==================== -->
+<title>Tabla Periódica Interactiva 2026 | Los 118 Elementos Químicos Explicados</title>
+<meta name="description" content="Tabla periódica interactiva y gratuita con los 118 elementos químicos. Haz clic en cada elemento para ver su número atómico, masa, categoría, descubrimiento y usos reales. Ideal para estudiantes y profesores de química.">
+<meta name="keywords" content="tabla periódica, tabla periódica interactiva, elementos químicos, química, número atómico, masa atómica, metales, no metales, gases nobles, lantánidos, actínidos">
+<meta name="author" content="Tabla Periódica Interactiva">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.tudominio.com/">
+
+<!-- ==================== OPEN GRAPH / REDES SOCIALES ==================== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tabla Periódica Interactiva">
+<meta property="og:title" content="Tabla Periódica Interactiva | Los 118 Elementos Químicos">
+<meta property="og:description" content="Explora los 118 elementos químicos con una tabla periódica interactiva, moderna y gratuita. Datos, curiosidades y usos reales de cada elemento.">
+<meta property="og:url" content="https://www.tudominio.com/">
+<meta property="og:image" content="https://www.tudominio.com/img/og-preview.png">
+<meta property="og:locale" content="es_ES">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tabla Periódica Interactiva | Los 118 Elementos Químicos">
+<meta name="twitter:description" content="Explora los 118 elementos químicos con una tabla periódica interactiva, moderna y gratuita.">
+<meta name="twitter:image" content="https://www.tudominio.com/img/og-preview.png">
+
+<!-- ==================== ICONOS Y MANIFEST ==================== -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#050a18">
+
+<!-- ==================== RENDIMIENTO ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- ==================== GOOGLE ADSENSE ====================
+     Sustituye ca-pub-XXXXXXXXXXXXXXXX por tu ID real de AdSense.
+     Este script solo debe activarse tras el consentimiento de cookies (ver js/consent.js) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous" data-cookieconsent="ignore"></script>
+
+<!-- ==================== DATOS ESTRUCTURADOS (SEO) ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Tabla Periódica Interactiva",
+  "url": "https://www.tudominio.com/",
+  "description": "Tabla periódica interactiva y gratuita con los 118 elementos químicos, sus propiedades, descubrimiento y usos reales.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "es",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuántos elementos tiene la tabla periódica?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La tabla periódica actual tiene 118 elementos confirmados, desde el hidrógeno (número atómico 1) hasta el oganesón (número atómico 118)." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es el número atómico?",
+      "acceptedAnswer": { "@type": "Answer", "text": "El número atómico indica la cantidad de protones que tiene el núcleo de un átomo y determina de qué elemento químico se trata." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo están organizados los elementos en la tabla periódica?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Los elementos se organizan por número atómico creciente, agrupados en periodos (filas) y grupos (columnas) según sus propiedades químicas y electrónicas." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ==================== BANNER DE COOKIES (GDPR) ==================== -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p>
+    🍪 Usamos cookies propias y de terceros (incluida publicidad personalizada de Google AdSense) para mejorar tu experiencia y analizar el tráfico.
+    Puedes aceptar, rechazar o configurar tus preferencias. Más información en nuestra
+    <a href="cookies.html">Política de Cookies</a>.
+  </p>
+  <div class="cookie-actions">
+    <button id="cookieRejectBtn" class="cookie-btn cookie-btn-secondary">Rechazar</button>
+    <button id="cookieSettingsBtn" class="cookie-btn cookie-btn-secondary">Configurar</button>
+    <button id="cookieAcceptBtn" class="cookie-btn cookie-btn-primary">Aceptar todas</button>
+  </div>
+</div>
+
+<div id="cookieSettingsPanel" class="cookie-settings-panel" hidden>
+  <div class="cookie-settings-box">
+    <h2>Preferencias de cookies</h2>
+    <label class="cookie-toggle">
+      <input type="checkbox" checked disabled> Cookies necesarias (siempre activas)
+    </label>
+    <label class="cookie-toggle">
+      <input type="checkbox" id="adsConsentCheckbox"> Cookies de publicidad y medición (Google AdSense)
+    </label>
+    <div class="cookie-actions">
+      <button id="cookieSavePrefsBtn" class="cookie-btn cookie-btn-primary">Guardar preferencias</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== LAYOUT PRINCIPAL CON ANUNCIOS LATERALES ==================== -->
+<div class="page-layout">
+
+  <!-- Anuncio lateral izquierdo (solo escritorio) -->
+  <aside class="ad-rail ad-rail-left" aria-label="Publicidad">
+    <div class="ad-slot ad-slot-sticky">
+      <span class="ad-label">Publicidad</span>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="0000000001"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <header>
+      <h1>⚛ TABLA PERIÓDICA</h1>
+      <p>118 elementos · Haz clic para explorar</p>
+    </header>
+
+    <!-- Anuncio horizontal superior (todos los dispositivos) -->
+    <div class="ad-slot ad-slot-horizontal">
+      <span class="ad-label">Publicidad</span>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="0000000002"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+    <p class="seo-intro">
+      Bienvenido a la <strong>tabla periódica interactiva</strong> más completa y gratuita en español.
+      Haz clic sobre cualquiera de los <strong>118 elementos químicos</strong> para descubrir su número
+      atómico, masa atómica, punto de descubrimiento, estado a temperatura ambiente y usos reales en
+      la industria, la medicina y la vida cotidiana. Una herramienta pensada para estudiantes,
+      profesores y curiosos de la química.
+    </p>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#ff4e6a"></div>Metal alcalino</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ff9a3c"></div>Metal alcalinotérreo</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4fc3f7"></div>Metal de transición</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#81c784"></div>Metal post-transición</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ce93d8"></div>Metaloide</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fff176"></div>No metal</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#80deea"></div>Halógeno</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef9a9a"></div>Gas noble</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#f48fb1"></div>Lantánido</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#a5d6a7"></div>Actínido</div>
+    </div>
+
+    <div class="table-wrapper">
+      <div class="periodic-table" id="ptable"></div>
+    </div>
+
+    <!-- Anuncio horizontal in-feed (móvil y escritorio) -->
+    <div class="ad-slot ad-slot-horizontal">
+      <span class="ad-label">Publicidad</span>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="0000000003"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- ==================== CONTENIDO SEO / FAQ ==================== -->
+    <section class="seo-section">
+      <h2>Preguntas frecuentes sobre la tabla periódica</h2>
+      <div class="faq-item">
+        <h3>¿Cuántos elementos tiene la tabla periódica?</h3>
+        <p>La tabla periódica actual reconoce 118 elementos, desde el hidrógeno (1) hasta el oganesón (118), el último confirmado oficialmente por la IUPAC.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué es el número atómico?</h3>
+        <p>Es el número de protones en el núcleo de un átomo. Determina la identidad del elemento y su posición en la tabla periódica.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Cómo se organizan los elementos?</h3>
+        <p>Se ordenan por número atómico creciente en filas llamadas periodos y columnas llamadas grupos, que comparten propiedades químicas similares.</p>
+      </div>
+      <div class="faq-item">
+        <h3>¿Qué diferencia hay entre metales, no metales y metaloides?</h3>
+        <p>Los metales son buenos conductores de electricidad y calor, los no metales tienden a ser aislantes y los metaloides presentan propiedades intermedias, útiles en semiconductores.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="cookies.html">Política de Cookies</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+      </nav>
+      <p>© <span id="year"></span> Tabla Periódica Interactiva. Todos los derechos reservados.</p>
+    </footer>
+
+  </main>
+
+  <!-- Anuncio lateral derecho (solo escritorio) -->
+  <aside class="ad-rail ad-rail-right" aria-label="Publicidad">
+    <div class="ad-slot ad-slot-sticky">
+      <span class="ad-label">Publicidad</span>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="0000000004"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </aside>
+
+</div>
+
+<!-- ==================== MODAL DE DETALLE DE ELEMENTO ==================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-symbol-box">
+        <span class="number" id="mNumber"></span>
+        <span class="symbol" id="mSymbol"></span>
+        <span class="mass" id="mMass"></span>
+      </div>
+      <div class="modal-title-block">
+        <h2 id="mName"></h2>
+        <span class="category-badge" id="mCategory"></span>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modal-img-section">
+      <div class="img-placeholder" id="imgContainer">
+        <span class="big" id="imgSymbol"></span>
+        <span id="imgLabel">Imagen del elemento</span>
+      </div>
+    </div>
+    <div class="modal-props">
+      <div class="prop-item"><div class="prop-label">Número Atómico</div><div class="prop-value" id="pNumber"></div></div>
+      <div class="prop-item"><div class="prop-label">Masa Atómica</div><div class="prop-value" id="pMass"></div></div>
+      <div class="prop-item"><div class="prop-label">Período</div><div class="prop-value" id="pPeriod"></div></div>
+      <div class="prop-item"><div class="prop-label">Grupo</div><div class="prop-value" id="pGroup"></div></div>
+      <div class="prop-item"><div class="prop-label">Estado (25°C)</div><div class="prop-value" id="pState"></div></div>
+      <div class="prop-item"><div class="prop-label">Descubierto</div><div class="prop-value" id="pDiscovery"></div></div>
+    </div>
+    <div class="modal-desc">
+      <h3>◈ Descripción</h3>
+      <p id="mDesc"></p>
+    </div>
+  </div>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/elements-data.js" defer></script>
+<script src="js/app.js" defer></script>
+<script src="js/consent.js" defer></script>
+</body>
+</html>

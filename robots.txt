@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad | Tabla Periódica Interactiva</title>
+<meta name="description" content="Política de privacidad de Tabla Periódica Interactiva: qué datos recogemos, con qué finalidad y cómo puedes ejercer tus derechos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.tudominio.com/privacidad.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="legal-page">
+  <a class="back-link" href="index.html">← Volver a la tabla periódica</a>
+  <h1>Política de Privacidad</h1>
+  <p class="updated">Última actualización: <span id="updateDate"></span></p>
+
+  <p>En Tabla Periódica Interactiva (en adelante, "el Sitio") respetamos tu privacidad y nos comprometemos a proteger los datos personales que puedas facilitarnos o que se generen mientras navegas. Esta política explica qué información tratamos y con qué finalidad.</p>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Titular: [NOMBRE / RAZÓN SOCIAL DEL TITULAR DEL SITIO]<br>
+  Correo de contacto: [tu-email@tudominio.com]<br>
+  Domicilio: [DIRECCIÓN, en caso de ser obligatorio según tu jurisdicción]</p>
+  <p><em>Sustituye estos datos por los tuyos reales antes de publicar el sitio: son obligatorios para cumplir con el RGPD y la LSSI-CE si operas desde España o la Unión Europea.</em></p>
+
+  <h2>2. Datos que tratamos</h2>
+  <ul>
+    <li><strong>Datos de navegación:</strong> dirección IP, tipo de navegador, páginas visitadas y tiempo de permanencia, recogidos de forma agregada mediante herramientas de analítica.</li>
+    <li><strong>Cookies:</strong> archivos que se explican en detalle en nuestra <a href="cookies.html">Política de Cookies</a>.</li>
+    <li><strong>Datos de contacto:</strong> si nos escribes por correo electrónico, trataremos tu dirección y el contenido del mensaje para responderte.</li>
+  </ul>
+
+  <h2>3. Finalidad del tratamiento</h2>
+  <ul>
+    <li>Prestar el servicio de consulta de la tabla periódica interactiva.</li>
+    <li>Analizar el uso del Sitio para mejorarlo.</li>
+    <li>Mostrar publicidad, incluida publicidad personalizada a través de Google AdSense, cuando el usuario ha dado su consentimiento.</li>
+    <li>Responder a tus consultas si te pones en contacto con nosotros.</li>
+  </ul>
+
+  <h2>4. Publicidad y terceros (Google AdSense)</h2>
+  <p>Este Sitio muestra anuncios gestionados por Google AdSense. Google, como tercero, puede utilizar cookies para mostrar anuncios basados en las visitas que has realizado a este y otros sitios web. Puedes obtener más información sobre cómo Google usa los datos en:
+  <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>. Puedes inhabilitar la publicidad personalizada visitando
+  <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p>
+
+  <h2>5. Base legal</h2>
+  <p>El tratamiento de tus datos se basa en tu consentimiento (cookies no esenciales y publicidad personalizada) y en el interés legítimo del titular para el funcionamiento básico y seguro del Sitio (cookies técnicas).</p>
+
+  <h2>6. Conservación de los datos</h2>
+  <p>Los datos de navegación y cookies se conservan durante el tiempo indicado en la <a href="cookies.html">Política de Cookies</a>. Los datos de contacto se conservan mientras sean necesarios para atender tu solicitud.</p>
+
+  <h2>7. Tus derechos</h2>
+  <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando un correo a [tu-email@tudominio.com], adjuntando una copia de un documento que acredite tu identidad.</p>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Podemos actualizar esta política para adaptarla a novedades legislativas o cambios en el Sitio. Te recomendamos revisarla periódicamente.</p>
+
+  <p><em>Este documento es una plantilla general y no sustituye el asesoramiento de un profesional legal. Antes de publicar el sitio, revísalo y adáptalo con un abogado o asesor especializado en protección de datos, especialmente en cuanto a la identidad del responsable del tratamiento.</em></p>
+</div>
+<script>document.getElementById('updateDate').textContent = new Date().toLocaleDateString('es-ES', {year:'numeric', month:'long', day:'numeric'});</script>
+</body>
+</html>
